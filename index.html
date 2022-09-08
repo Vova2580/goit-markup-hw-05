@@ -23,17 +23,22 @@
 
     <ul class="nav-list list" >
         <li class="item">
-            <a class="nav-link current"  href="" >Студія</a>   
+            <a class="nav-link current"  href="" >Студія</a> 
+             <!-- <div class="active-line">
+                
+            </div>   -->
         </li>
 
         <li class="item">
-            <a class="nav-link"  href="./portfolio.html">Портфоліо</a>           
+            <a class="nav-link"  href="./portfolio.html">Портфоліо</a> 
+                    
         </li>
 
         <li class="item">
             <a class="nav-link" href="">Контакти</a>  
         </li>
     </ul>
+    
     </nav>
      <ul class="contact-list list">
         <li class="item">
@@ -64,7 +69,7 @@
         <div class="container">
 
          <h1 class="hero-title title-center">Ефективні рішення для вашого бізнесу</h1>
-            <button  class="button" type="button">Замовити послугу</button>
+            <button  class="button" type="button" data-modal-open>Замовити послугу</button>
 
         </div>
 
@@ -138,9 +143,23 @@
                 <h2 class="section-title">Чим ми займаємося</h2>
 
                 <ul class="galery list">
-                    <li class="item"><img class="picg" src="./images/picture3.jpg" alt="Людина набирає код" width="370"></li>
-                    <li class="item"><img class="picg" src="./images/picture2.jpg" alt="Користувач збирається зчитати код" width="370"></li>
-                    <li class="item"><img class="picg" src="./images/picture1.jpg" alt="Розробник обирає кольорову гаму" width="370"></li>
+                <li class="item galery-item">
+                    <img class="picg" src="./images/picture3.jpg" alt="Людина набирає код" width="370">
+                    <div class="picture-discription">
+                        <h3 class="galery-pic-discription">Десктопні додатки</h3>
+                    </div>
+                </li>
+                    <li class="item galery-item">
+                        <img class="picg" src="./images/picture2.jpg" alt="Користувач збирається зчитати код" width="370">
+                    <div class="picture-discription">
+                        <h3 class="galery-pic-discription">Мобільні додатки</h3>
+                    </div>
+                </li>
+                    <li class="item galery-item"><img class="picg" src="./images/picture1.jpg" alt="Розробник обирає кольорову гаму" width="370">
+                    <div class="picture-discription">
+                        <h3 class="galery-pic-discription">Дизайнерські рішення</h3>
+                    </div>
+                </li>
               </ul>  
             </div>             
         </section>
@@ -373,6 +392,8 @@
             </ul>
             </div>
         </section>
+
+        
     </main>
     
 <!-- Подвал сайта -->
@@ -431,6 +452,12 @@
     </div> 
 
     </footer>
+        <div data-modal class="backdrop is-hidden">
+            <div class="modal">
+                <button class="modaloff" data-modal-close></button>
+            </div>
+        </div>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
