@@ -137,13 +137,17 @@ border-radius: 2px;
     font-size: 14px;
     line-height: calc(16 / 14);
     letter-spacing: 0.02em;
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+    
     display: flex;
     align-items: center;
 
     transition-property: color;
     transition-duration: var(--timing--);
     transition-timing-function: var(--cubik--);
-
+    
 }
 .contact-phone{
     color:var(--secondary-text-color);
@@ -152,12 +156,17 @@ border-radius: 2px;
     font-size: 14px;
     line-height: calc(16 / 14);
     letter-spacing: 0.02em;
+
+    padding-top: 32px;
+    padding-bottom: 32px;
     display: flex;
+
     align-items: center;
 
     transition-property: color;
     transition-duration: var(--timing--);
     transition-timing-function: var(--cubik--);
+    
 }
 
 .nav-list{
@@ -734,6 +743,8 @@ margin-bottom: 0;
   position: relative;  
 }
 
+
+
 .hoverinfo{
   overflow: hidden;
   position: relative;
@@ -744,6 +755,11 @@ margin-bottom: 0;
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hoverinfo:hover
+.hoverinfo:focus{
+  transform: translateY(0);
 }
 
 .flex-card .item:hover .hoverinfo{
