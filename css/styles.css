@@ -734,6 +734,18 @@ margin-bottom: 0;
   position: relative;  
 }
 
+.hoverinfo{
+  overflow: hidden;
+  position: relative;
+ 
+
+  transform: translateY(100%);
+  opacity: 0;
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .flex-card .item:hover .hoverinfo{
   position: absolute;
   top:0;
@@ -757,9 +769,17 @@ margin-bottom: 0;
   line-height: 28px;
   letter-spacing: 0.03em;
 
-  transition:color var(--timing--) var(--cubik--);
-  
-  
+  transition: color var(--timing--) var(--cubik--);
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
+
+.hoverinfo .info{
+  position: absolute;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .flex-container{
