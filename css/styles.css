@@ -582,6 +582,7 @@ transition: fill var(--timing--) var(--cubik--);
   width: 18px;
   height: 18px;
 }
+
 label{
   display: block;
 }
