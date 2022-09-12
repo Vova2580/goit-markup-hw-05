@@ -35,6 +35,10 @@ margin-bottom: 0;
 padding-right:0;
 padding-left: 0;
 }
+.link{
+  text-decoration: none;
+
+}
 /* header */
 
 .header{
@@ -96,7 +100,7 @@ fill:var(--accent-text-color);
 }
 
 .nav-link{
-  position: relative;
+position: relative;
 text-decoration: none;
 font-weight: 500;
 font-size: 14px;
@@ -731,6 +735,8 @@ margin-bottom: 4px;
 }
 
 .portfolio-content{
+color: var(--secondary-text-color);
+
 font-size: 16px;
 line-height:calc(30 / 16);
 letter-spacing: 0.03em;
@@ -740,29 +746,13 @@ margin-bottom: 0;
 }
 
 .overlay{
-  position: relative;  
+  overflow: hidden;
+  position: relative;
 }
 
 
 
 .hoverinfo{
-  overflow: hidden;
-  position: relative;
- 
-
-  transform: translateY(100%);
-  opacity: 0;
-  transition-property: transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.hoverinfo:hover
-.hoverinfo:focus{
-  transform: translateY(0);
-}
-
-.flex-card .item:hover .hoverinfo{
   position: absolute;
   top:0;
   left: 0;
@@ -785,9 +775,13 @@ margin-bottom: 0;
   line-height: 28px;
   letter-spacing: 0.03em;
 
-  transition: color var(--timing--) var(--cubik--);
-  transform: translateY(0);
-  opacity: 1;
+  transform: translateY(101%);
+
+  transition-property: transform, opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
+  opacity: 0;
 }
 
 
@@ -796,6 +790,12 @@ margin-bottom: 0;
   position: absolute;
   padding-left: 24px;
   padding-right: 24px;
+}
+
+.portfolio-link:hover .hoverinfo, 
+.portfolio-link:focus .hoverinfo {
+  transform: translateY(0);
+  opacity: 1;
 }
 
 .flex-container{
