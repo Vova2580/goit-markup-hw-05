@@ -569,6 +569,10 @@ border: 1px solid rgba(33, 150, 243, 1);
   height: 18px;
 }
 
+label{
+  display: block;
+}
+
 /* footer */
 .footer{
 background-color:var(--hero-footer-bg-color);
